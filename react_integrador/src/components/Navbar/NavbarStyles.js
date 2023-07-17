@@ -30,7 +30,7 @@ export const NavLinkS = styled.div`
     cursor: pointer;
 
     &.active {
-        color: red;
+        color: #FF6600;
     }
 
 `;
