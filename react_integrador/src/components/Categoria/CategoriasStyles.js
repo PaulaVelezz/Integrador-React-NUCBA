@@ -37,9 +37,10 @@ export const CategFilCard = styled.div`
     font-size: 17px;
     letter-spacing: 1px;
     
-    
+    background-color: ${({ selected }) => selected ? 'var(--bg-naranjita)' : 'whitesmoke'};;
+
     h3:hover{
-        color: #FF6600;
+        color: ${({ selected }) => selected ? '#141414' : ' #FF6600'};;
     }
 
     &img{

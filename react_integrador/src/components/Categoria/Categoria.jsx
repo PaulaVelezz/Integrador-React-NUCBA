@@ -1,9 +1,19 @@
 import React from 'react'
 import { CategFilCard } from './CategoriasStyles';
+import { useDispatch, useSelector } from 'react-redux';
+import { categorySelect } from "../../redux/categories/categoriesSlice";
 
-const Categoria = ( {img, title, category}) => {
+export const Categoria = ( {img, title, category}) => {
+
+  const dispatch = useDispatch();
+
+  const categorySelected = useSelector ((state) => state.categories.categorySelected)
+
   return (
-    <CategFilCard>
+    <CategFilCard
+      selected={ category === categorySelected }
+      onClick={ () => dispatch(categorySelect(category)) }
+    >
         <img 
             src={img} 
             alt={category} 
@@ -11,7 +21,7 @@ const Categoria = ( {img, title, category}) => {
         
         <h3>{title}</h3>
     </CategFilCard>
-  )
-}
+  );
+};
 
 export default Categoria;
