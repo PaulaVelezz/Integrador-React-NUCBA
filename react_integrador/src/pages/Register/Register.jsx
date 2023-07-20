@@ -14,7 +14,9 @@ const Register = () => {
   return (
     <RegisterContainerS>
       <RegisterTopS>
-        <img src="images/Logo (3).png" alt="logo" />
+        <Link to='/'>
+          <img src="images/Logo (3).png" alt="logo" />
+        </Link>
         <h1>Registrarse</h1>
       </RegisterTopS>
 

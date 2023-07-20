@@ -9,11 +9,3 @@ export const registerIV = {
     email: "",
     password: "",
 };
-
-
-export const checkoutIV = {
-    name: "",
-    cellphone: "",
-    adress: "",
-    postalCode:"",
-};

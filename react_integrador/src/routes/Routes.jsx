@@ -11,8 +11,7 @@ const Rutass = () => {
         <Route path="/" element={<Home />} />   
         <Route path="/login" element={<Login />} /> 
         <Route path="/register" element={<Register />} /> 
-        {/* <Route path="/checkout" element={<Checkout/>} />
-        <Route path="*" element={<p>Error</p>} /> */}
+        {/*<Route path="*" element={<p>Error</p>} /> */}
     </Routes>
   );
 };

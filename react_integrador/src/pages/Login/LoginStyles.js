@@ -27,6 +27,7 @@ export const LoginTopS = styled.div`
         object-fit: contain;
         background: black;
         border-radius: 15px;
+        cursor: pointer;
     }
 `;
 

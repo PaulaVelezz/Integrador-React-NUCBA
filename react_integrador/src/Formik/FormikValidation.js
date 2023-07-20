@@ -20,11 +20,3 @@ export const registerValidacion = Yup.object({
     password: Yup.string().min(7, "Minimo 7 caracteres").required("Campo Obligatorio"),
 
 });
-
-
-export const checkoutValidacion = Yup.object({
-    name: Yup.string().required("Campo Obligatorio"),
-    cellphone: Yup.string().required("Campo Obligatorio"),
-    adress: Yup.string().required("Campo Obligatorio"),
-    postalCode: Yup.string().required("Campo Obligatorio"),
-});

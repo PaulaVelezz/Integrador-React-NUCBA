@@ -15,6 +15,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart, clearCart } from '../../../redux/cart_carrito/cartSlice';
 
 
+import Swal from "sweetalert2";
+
 
 const CartModal = () => {
 
@@ -27,6 +29,26 @@ const CartModal = () => {
     // const totalPrice = cartItems.reduce((acc, item) => {
     //     return (acc + item.price * item.quantity)
     // }, 0);
+
+    const ConfirmFC = () => {
+        Swal.fire({
+            title: '¿Esta seguro que desea finalizar su compra?',
+            icon: 'question',
+            confirmButtonColor: '#30d675',
+            confirmButtonText: 'Si!',
+            showCancelButton: true,
+            cancelButtonColor: '#d33',
+            cancelButtonText: 'Cancelar',
+        }).then((res) => {
+            if (res.isConfirmed) {
+            Swal.fire(
+                'Finalizado!',
+                'Su compra fue realizada con exito.',
+                'success'
+            )
+            }
+        })
+    };
 
 
   return (
@@ -90,12 +112,12 @@ const CartModal = () => {
                     <CheckoutIpS>
                         <Submit 
                             onClick={() => {
-                                navigate('/checkout');
+                                ConfirmFC();
                                 dispatch(toggleCart());
                             }}
                             disabled={!cartItems.length}
                             >
-                            Iniciar Compra
+                            Finalizar Compra
                         </Submit>
                     </CheckoutIpS>
                 </BottomContainer>

@@ -13,7 +13,9 @@ const Login = () => {
   return (
     <LoginContainerS>
       <LoginTopS>
-        <img src="images/Logo (3).png" alt="logo" />
+        <Link to='/'>
+          <img src="images/Logo (3).png" alt="logo" />
+        </Link>
         <h1>Inicia Sesión</h1>
       </LoginTopS>
 
