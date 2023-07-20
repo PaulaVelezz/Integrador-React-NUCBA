@@ -24,9 +24,9 @@ const CartModal = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    const totalPrice = cartItems.reduce((acc, item) => {
-        return (acc += item.price * item.quantity);
-    }, 0);
+    // const totalPrice = cartItems.reduce((acc, item) => {
+    //     return (acc + item.price * item.quantity)
+    // }, 0);
 
 
   return (
@@ -52,19 +52,20 @@ const CartModal = () => {
                     whileTap={{ scale: 0.95 }}
                     onClick={() => dispatch(toggleCart())}
                     >
-                        <CgCloseR size={'18px'} />
+                        <CgCloseR size={'20px'} />
 
                     </CloseBtnCartS>
                 </CloseBtnContainerS>
 
                 <AllContentCartS>
                     <TitleCartS>
-                        <h2>your order</h2>
-                
+                        <h2>Your Order: </h2>
+                        
                         <Handlercounter
                             onClick={() => dispatch(clearCart())}
+                            disabled={!cartItems.length}
                         >
-                            <RiDeleteBin5Fill/>
+                            <RiDeleteBin5Fill size={'18px'} />
                         </Handlercounter>
                     </TitleCartS>
 
@@ -83,7 +84,7 @@ const CartModal = () => {
                     <hr />
                     <TotalS>
                         <p>Total:</p>
-                        <span>${totalPrice}</span>
+                        <span>$0000</span>
                     </TotalS>
                     
                     <CheckoutIpS>

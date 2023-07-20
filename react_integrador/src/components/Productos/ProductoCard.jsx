@@ -27,9 +27,9 @@ const ProductoCard = ({img, title, price, id}) => {
             > Add cart </ButtonUI>
         </BtnPriceContainer>
         
-        <BtnSM>
+        {/* <BtnSM>
             <button>See Product</button>
-        </BtnSM>
+        </BtnSM> */}
     </ProdCardS>
   );
 };

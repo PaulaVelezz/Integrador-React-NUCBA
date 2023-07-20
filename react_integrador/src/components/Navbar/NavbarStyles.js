@@ -38,6 +38,10 @@ export const NavLinkS = styled.div`
 
 `;
 
+export const NavLinkCart = styled(NavLinkS)`
+
+`;
+
 export const ModalMenuOverlay = styled(motion.div)`
     position: fixed;
     top: 0;

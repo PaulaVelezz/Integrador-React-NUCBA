@@ -1,7 +1,7 @@
 export const addItemTCart = (cartItems, product) => {
     
     const productInCart = cartItems.find((item) => {
-        return item.id === product.id
+        return item.id === product.id;
     });
 
     if (productInCart) {

@@ -1,37 +1,45 @@
 import React from 'react'
-import { LinksContainerS, Logo, NavLinkS, NavbarContainerS } from './NavbarStyles';
+
+import { LinksContainerS, Logo, NavLinkS, 
+    NavbarContainerS, NavLinkCart } from './NavbarStyles';
+
 import { HiOutlineHome, HiOutlineUserCircle } from "react-icons/hi";
-import { BsBasket } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
+import { Link } from "react-router-dom";
+import CartBasketIcon from "./CartBasketIcon/CartBasketIcon";
 
-
+import CartModal from "./CartModal/CartModal";
 
 const Navbar = () => {
     const navigate = useNavigate();
-    // const dispatch = useDispatch();
 
   return (
     <NavbarContainerS>
-        <Logo>
-            <img src="images/Logo (3).png" alt="logo" />
-        </Logo>
+        <CartModal />
+
+        <Link to ='/'>
+            <Logo>
+                <img src="images/Logo (3).png" alt="logo" />
+            </Logo>
+        </Link>
+
         <LinksContainerS>
-        <NavLinkS>
-            Home
-            <HiOutlineHome/>
-        </NavLinkS>
+            <NavLinkS>
+                Home
+                <HiOutlineHome/>
+            </NavLinkS>
 
-        <NavLinkS
-            onClick={() => navigate("/login")}
-        >
-            Cuenta
-            <HiOutlineUserCircle/>
-        </NavLinkS>
+            <NavLinkS
+                onClick={() => navigate("/login")}
+            >
+                Cuenta
+                <HiOutlineUserCircle/>
+            </NavLinkS>
 
-        <NavLinkS>
-            <BsBasket/> 
-        </NavLinkS>
+            <NavLinkCart>
+                <CartBasketIcon/> 
+            </NavLinkCart>
+
         </LinksContainerS>
     </NavbarContainerS>
   );

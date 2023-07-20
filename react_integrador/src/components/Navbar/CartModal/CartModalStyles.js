@@ -36,31 +36,34 @@ export const CartModalContainerS = styled.div`
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 3;
+    z-index: 5;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 400px;
+    justify-content: space-around;
+    width: 500px;
     height: calc(100vh - 2rem);
     background-color: whitesmoke;
     border-radius: 7px;
-
 `;
 
 export const CloseBtnContainerS = styled.div`
-    height: 30px;
+    display: flex;
+    justify-content: left;
+    padding: 7px;
 `;
 
 export const CloseBtnCartS = styled(motion.button)`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
+    width: 2rem;
+    height: 2rem;
     outline: none;
-    border: solid 1px black;
-    color: red;
+    border: 1px solid black;
+    color: whitesmoke;
     cursor: pointer;
-    background: yellow;
+    background: red;
+    border-radius: 8px;
 `;
 
 export const AllContentCartS = styled.div`
@@ -71,6 +74,9 @@ export const TitleCartS = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 7px;
+    color: #010101;
+    border-bottom: solid 1px black;
 `;
 
 export const WrapperCartS = styled.div`
@@ -80,16 +86,29 @@ export const WrapperCartS = styled.div`
     width: 100%;
     height: 300px;
     margin: auto;
+    color: #010101;
     overflow: scroll;
+    padding: 10px;
 `;
 
 export const BottomContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 `;
 
 export const TotalS = styled(BottomContainer)`
+    display: flex;
+    flex-direction: row;
+    color: #010101;
+    border: solid 1px #010101;
+    justify-content: space-between;
+    width: 80%;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 5px;
 `;
 
 export const CheckoutIpS = styled.div`
@@ -98,13 +117,14 @@ export const CheckoutIpS = styled.div`
 export const ModalOverlayS = styled(motion.div)`
     position: fixed;
     top: 0;
-    z-index: 45;
-    width: calc(100vh - 400px);
+    left: 0;
+    z-index: 4;
+    width: 100vw;
     height: 100vh;
 
     ${({ isHidden }) =>
         !isHidden && 
         css`
-            backdrop-filter: blur(5px);
+            backdrop-filter: blur(2px);
         `}
 `;

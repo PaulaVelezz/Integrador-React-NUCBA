@@ -5,10 +5,11 @@ export const HandlercounterS = styled(motion.button)`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    font-weight: 600;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
-    color: black;
-    border: solid 1px green;
+    color: whitesmoke;
+    background-color: #094c66;
+    border: solid 1px black;
+    border-radius: 8px;
 `;

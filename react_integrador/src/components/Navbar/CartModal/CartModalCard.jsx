@@ -1,5 +1,6 @@
 import React from 'react';
 import { InfoProductCartS, ProductCartContainerS, QuantityHandlerS } from './CartModalStyles';
+
 import Handlercounter from "../../UI/Handlercounter/Handlercounter";
 import Count from "../../UI/Count/Count";
 import {FaMinus, FaPlus} from "react-icons/fa";
