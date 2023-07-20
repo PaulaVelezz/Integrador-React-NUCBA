@@ -64,6 +64,12 @@ export const BtnPriceContainer = styled.div`
     }
 `;
 
+export const PriceCard = styled.span`
+    font-weight: 600;
+    font-size: 18px;
+`;
+
+
 export const BtnSM = styled.div`
     button{
         background-color: #141414;

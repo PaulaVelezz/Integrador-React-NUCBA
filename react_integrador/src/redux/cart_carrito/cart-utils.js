@@ -26,7 +26,7 @@ export const addItemTCart = (cartItems, product) => {
 export const removeItemFCart = (cartItems, id) => {
     
     const removingProduct = cartItems.find ((item) => {
-        return item.id === id
+        return item.id === id;
     });
 
     if (removingProduct.quantity > 1 ) {
@@ -38,6 +38,6 @@ export const removeItemFCart = (cartItems, id) => {
     }
 
     return cartItems.filter ((item) => {
-        return item.id !== removingProduct.id
+        return item.id !== removingProduct.id;
     });
 };

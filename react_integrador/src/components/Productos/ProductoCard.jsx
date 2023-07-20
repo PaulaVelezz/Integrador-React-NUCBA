@@ -1,12 +1,14 @@
 import React from 'react'
-import { BtnPriceContainer, BtnSM, ProdCardS } from './ProductoCardsStyles';
-// import { useDispatch } from 'react-redux';
+import { BtnPriceContainer, BtnSM, PriceCard, ProdCardS } from './ProductoCardsStyles';
+import { useDispatch } from 'react-redux';
+import { addToCart } from "../../redux/cart_carrito/cartSlice";
+
+import ButtonUI from "../UI/Button/Button";
 
 
+const ProductoCard = ({img, title, price, id}) => {
 
-const ProductoCard = ( {img, title, price}) => {
-
-    // const dispatch = useDispatch()
+    const dispatch = useDispatch();
   
     return (
     <ProdCardS>
@@ -18,14 +20,18 @@ const ProductoCard = ( {img, title, price}) => {
         />
         
         <BtnPriceContainer>
-            <button> Add cart - {price} </button>
+            <PriceCard>${price}</PriceCard>
+                
+            <ButtonUI 
+                onClick={() => dispatch(addToCart({ img, title, price, id }))}
+            > Add cart </ButtonUI>
         </BtnPriceContainer>
         
         <BtnSM>
             <button>See Product</button>
         </BtnSM>
     </ProdCardS>
-  )
-}
+  );
+};
 
 export default ProductoCard;

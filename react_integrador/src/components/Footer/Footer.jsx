@@ -4,43 +4,42 @@ import { FaFacebookF } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import { MdLocalPhone, MdEmail, MdLocationPin } from "react-icons/md";
 
-import { FooterContainer, footerLogo, footerBoxOne,
-    firstBoxInfo, footerBoxTwo, secondBoxInfo, 
-    footerBoxthree, thirdBoxInfo } from "./FooterStyles";
+import { FirstBoxInfo, FooterBoxOne, FooterBoxTwo, FooterBoxthree, 
+    FooterContainer, FooterLogo, SecondBoxInfo, ThirdBoxInfo } from "./FooterStyles";
 
 const Footer = () => {
   return (
     <FooterContainer>
-        <footerLogo>
+        <FooterLogo>
             {/* <img src="images/Logo (3).png" alt="logo" /> */}
-        </footerLogo>
+        </FooterLogo>
 
-        <footerBoxOne>
+        <FooterBoxOne>
             <h2>Contáctanos</h2>
-            <firstBoxInfo>
+            <FirstBoxInfo>
                 <p> <MdLocalPhone/> 000-000</p>
                 <p> <MdEmail/> Correo@gmail</p>
                 <p> <MdLocationPin/> Avenida 1234</p>
-            </firstBoxInfo>
-        </footerBoxOne>
+            </FirstBoxInfo>
+        </FooterBoxOne>
 
-        <footerBoxTwo>
+        <FooterBoxTwo>
             <h2>Preguntas frecuentes</h2>
-            <secondBoxInfo>
+            <SecondBoxInfo>
                 <p> texto uno</p>
                 <p> texto dos</p>
                 <p> texto tres</p>
-            </secondBoxInfo>
-        </footerBoxTwo>
+            </SecondBoxInfo>
+        </FooterBoxTwo>
 
-        <footerBoxthree>
+        <FooterBoxthree>
             <h2>Nuestras redes</h2>
-            <thirdBoxInfo>
+            <ThirdBoxInfo>
                 <BsInstagram/>
                 <FaFacebookF/>
                 <SiTiktok/>
-            </thirdBoxInfo>
-        </footerBoxthree>
+            </ThirdBoxInfo>
+        </FooterBoxthree>
     </FooterContainer>
   )
 }

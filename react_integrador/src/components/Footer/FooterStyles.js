@@ -10,30 +10,30 @@ export const FooterContainer = styled.div`
     text-align: center;
 `;
 
-export const footerLogo = styled.div`
+export const FooterLogo = styled.div`
     border: whitesmoke 2px solid;
 `;
 
-export const footerBoxOne = styled.div`
+export const FooterBoxOne = styled.div`
 
 `;
 
-export const firstBoxInfo = styled.div`
+export const FirstBoxInfo = styled.div`
    
 `;
 
-export const footerBoxTwo = styled.div`
+export const FooterBoxTwo = styled.div`
 
 `;
 
-export const secondBoxInfo = styled.div`
+export const SecondBoxInfo = styled.div`
 
 `;
 
-export const footerBoxthree = styled.div`
+export const FooterBoxthree = styled.div`
 
 `;
 
-export const thirdBoxInfo = styled.div`
+export const ThirdBoxInfo = styled.div`
     cursor: pointer;
 `;

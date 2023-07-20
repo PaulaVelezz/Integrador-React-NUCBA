@@ -9,12 +9,12 @@ const ProductosCards = () => {
 
     let products = useSelector(state => state.products.products);
 
-    const categorySelected = useSelector (state => state.categories.categorySelected)
+    const categorySelected = useSelector (state => state.categories.categorySelected);
 
     if (categorySelected) {
         products = {
-            [categorySelected]: products[categorySelected]
-        }
+            [categorySelected]: products[categorySelected],
+        };
     }
 
     

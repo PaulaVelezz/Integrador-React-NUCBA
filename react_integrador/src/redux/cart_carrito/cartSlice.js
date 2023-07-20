@@ -7,7 +7,7 @@ const INITIAL_STATE = {
     hidden: true,
 };
 
-const cartSlice = createSlice ({
+const cartSlice = createSlice({
     name: "cart",
     initialState: INITIAL_STATE,
     reducers: {
@@ -23,13 +23,13 @@ const cartSlice = createSlice ({
             return {
                 ...state,
                 cartItems: removeItemFCart(state.cartItems, action.payload),
-            }
+            };
         },
         // vaciar todo el carrito
         clearCart: (state) => {
             return {
                 ...state,
-                cartItems: []
+                cartItems: [],
             };
         },
         // toggle de carrito

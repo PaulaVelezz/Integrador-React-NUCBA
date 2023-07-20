@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 
 export const NavbarContainerS = styled.header`
     height: 80px;
@@ -33,4 +36,14 @@ export const NavLinkS = styled.div`
         color: #FF6600;
     }
 
+`;
+
+export const ModalMenuOverlay = styled(motion.div)`
+    position: fixed;
+    top: 0;
+    
+`;
+
+export const ItemMenu = styled(motion(Link))`
+    
 `;
