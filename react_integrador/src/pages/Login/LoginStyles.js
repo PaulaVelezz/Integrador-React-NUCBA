@@ -5,7 +5,7 @@ export const LoginContainerS = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
     gap: 1rem;
     margin-top: 30px;
     padding: 2rem;
@@ -19,6 +19,7 @@ export const LoginTopS = styled.div`
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    color: black;
 
     img{
         width: 150px;
@@ -48,7 +49,7 @@ export const RedirectionLtoR = styled.div`
 
     & span {
         font-weight: 600;
-        color: green;
+        color: #094c66; 
     }
 
     :hover{

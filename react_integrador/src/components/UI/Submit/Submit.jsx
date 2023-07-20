@@ -2,10 +2,7 @@ import React from 'react';
 import {BtnSubmitS} from "./SubmitStyles";
 
 
-const Submit = ({ 
-  children, 
-  onClick
-}) => {
+const Submit = ({ children, onClick}) => {
   return (
     <BtnSubmitS
         onClick={onClick}

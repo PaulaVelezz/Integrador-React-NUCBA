@@ -5,20 +5,20 @@ export const InputContainerS = styled.div`
     flex-direction: column;
     border: solid 1px black;
     background-color: black;
-    color: orange;
+    text-align: center;
 `;
 
 export const LoginInputS = styled.input`
-    width: 270px;
-    padding: 30px;
+    width: 260px;
+    padding: 18px;
     color: black;
-    background-color: orangered;
-    border: solid 1px red;
-    outline: none;
+    background-color: gainsboro;
+    border: none;
+    font-size: 15px;
 `;
 
 export const ErrorMsgS = styled.p`
-    margin: 0;
-    font-size: 13px;
-    color: red;
+   font-size: 12px;
+   letter-spacing: 1px;
+    color: orangered;
 `;
