@@ -4,10 +4,14 @@ import { motion } from "framer-motion";
 
 export const BtnSubmitS = styled(motion.button)`
     padding: 7px 12px;
-    margin-top: 10px;
     outline: none;
-    border: solid 1px red;
-    color: white;
+    border: solid 1px black;
+    border-radius: 7px;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 15px;
+
+    &:hover{
+        background-color: orange;
+    }
 `;

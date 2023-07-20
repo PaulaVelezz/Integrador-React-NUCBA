@@ -2,12 +2,13 @@ import React from 'react'
 import { LinksContainerS, Logo, NavLinkS, NavbarContainerS } from './NavbarStyles';
 import { HiOutlineHome, HiOutlineUserCircle } from "react-icons/hi";
 import { BsBasket } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 
 
 
 const Navbar = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     // const dispatch = useDispatch();
 
   return (
@@ -21,7 +22,9 @@ const Navbar = () => {
             <HiOutlineHome/>
         </NavLinkS>
 
-        <NavLinkS>
+        <NavLinkS
+            onClick={() => navigate("/login")}
+        >
             Cuenta
             <HiOutlineUserCircle/>
         </NavLinkS>

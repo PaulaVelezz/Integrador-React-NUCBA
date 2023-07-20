@@ -11,24 +11,24 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterLogo>
-            {/* <img src="images/Logo (3).png" alt="logo" /> */}
+            <img src="images/Logo (3).png" alt="logo" />
         </FooterLogo>
 
         <FooterBoxOne>
             <h2>Contáctanos</h2>
             <FirstBoxInfo>
-                <p> <MdLocalPhone/> 000-000</p>
+                <p> <MdLocalPhone/> 0000-000-000</p>
                 <p> <MdEmail/> Correo@gmail</p>
                 <p> <MdLocationPin/> Avenida 1234</p>
             </FirstBoxInfo>
         </FooterBoxOne>
 
         <FooterBoxTwo>
-            <h2>Preguntas frecuentes</h2>
+            <h2>Información</h2>
             <SecondBoxInfo>
-                <p> texto uno</p>
-                <p> texto dos</p>
-                <p> texto tres</p>
+                <p>Preguntas Frecuentes</p>
+                <p>Políticas de delivery</p>
+                <p>Terminos y condiciones</p>
             </SecondBoxInfo>
         </FooterBoxTwo>
 
