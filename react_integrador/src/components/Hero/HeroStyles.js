@@ -7,6 +7,7 @@ export const HeroContainerS = styled.section`
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    margin: auto;
 `;
 
 export const HeroMainContainer = styled.div`
@@ -22,6 +23,10 @@ export const HeroMainContainer = styled.div`
         font-family:'Blenny Trial', sans-serif;
         font-size: 4em;
         letter-spacing: 1px;
+    }
+
+    @media (max-width: 375px) {
+        text-align: center; 
     }
 `;
 
@@ -55,6 +60,10 @@ export const HeroTwoImg = styled.div `
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 20px 8px 90px 10px #28283d;
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 `;
 
 export const HeroOneImg = styled.div`
@@ -68,6 +77,10 @@ export const HeroOneImg = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 10px 100px 23px #28283d;
+    
+    @media (max-width: 681px) {
+        display: none;
+    }
 `;
 
 /////////////////////////////////
@@ -90,7 +103,7 @@ export const HeroBtnOne = styled.button `
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     font-weight: bolder;
-    cursor: pointer;
+    cursor: none;
 `;
 
 export const HeroBtnTwo = styled.button `
@@ -102,5 +115,5 @@ export const HeroBtnTwo = styled.button `
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     font-weight: bolder;
-    cursor: pointer;
+    cursor: none;
 `;

@@ -21,7 +21,7 @@ import Swal from "sweetalert2";
 const CartModal = () => {
 
     const hiddenCart = useSelector(state => state.cart.hidden);
-    const cartItems = useSelector (state => state.cart);
+    const { cartItems } = useSelector (state => state.cart);
 
     const navigate = useNavigate();
     const dispatch = useDispatch();

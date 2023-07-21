@@ -10,6 +10,7 @@ export const ProdCardContainer = styled.div`
     background: transparent;
     color: #141414;
     padding: 6rem 4rem;
+    margin: auto;
 `;
 
 export const ProdCardS = styled.div`

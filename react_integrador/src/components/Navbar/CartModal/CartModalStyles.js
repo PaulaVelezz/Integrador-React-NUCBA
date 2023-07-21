@@ -6,16 +6,22 @@ import { motion } from "framer-motion";
 export const ProductCartContainerS = styled.div`
     display: flex ;
     align-items: center;
-    justify-content: space-between;
-    width: 300px;
+    justify-content: space-around;
+    width: auto;
+    height: 120px;
     background-color: black;
-    border: solid 1px black;
+    border: solid 1px orangered;
     border-radius: 7px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
 
-    &img{
-        width: 60px;
-        height: 60px;
+    & img{
+        width: 90px;
+        height: 90px;
         object-fit: cover;
+        object-position: center;
     }
 `;
 

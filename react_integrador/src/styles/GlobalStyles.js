@@ -20,6 +20,7 @@ body {
     background-color: #010101;
     color: whitesmoke;
     font-family: 'Roboto Mono', monospace; 
+    overflow-x: hidden;
 }
 
 a {
@@ -33,6 +34,7 @@ li {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{

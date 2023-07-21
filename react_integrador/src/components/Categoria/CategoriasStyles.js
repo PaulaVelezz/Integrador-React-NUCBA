@@ -5,6 +5,7 @@ export const CategFilTitle = styled.div`
     color: #141414;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 30px;
     text-align: center;
 `;
@@ -18,6 +19,8 @@ export const CategoriasFilContainer = styled.section `
     background-color: whitesmoke;
     color: #141414;
     padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
 `;
 
 export const CategFilCard = styled.div`

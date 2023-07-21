@@ -11,6 +11,10 @@ export const NavbarContainerS = styled.header`
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+
+    @media (max-width: 375px) {
+        justify-content: center;
+    }
 `;
 
 export const Logo = styled.div`
@@ -19,6 +23,10 @@ export const Logo = styled.div`
 
     & img {
         width: 150px;
+    }
+
+    @media (max-width: 375px) {
+        display: none; 
     }
 `;
 
