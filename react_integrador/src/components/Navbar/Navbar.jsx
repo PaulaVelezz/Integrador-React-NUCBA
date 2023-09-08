@@ -1,46 +1,52 @@
-import React from 'react'
+import React from "react";
 
-import { LinksContainerS, Logo, NavLinkS, 
-    NavbarContainerS, NavLinkCart } from './NavbarStyles';
+import {
+  LinksContainerS,
+  Logo,
+  NavLinkS,
+  NavbarContainerS,
+  NavLinkCart,
+} from "./NavbarStyles";
 
 import { HiOutlineHome, HiOutlineUserCircle } from "react-icons/hi";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CartBasketIcon from "./CartBasketIcon/CartBasketIcon";
 
 import CartModal from "./CartModal/CartModal";
 
 const Navbar = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <NavbarContainerS>
-        <CartModal />
+      <CartModal />
 
-        <Link to ='/'>
-            <Logo>
-                <img src="images/Logo (3).png" alt="logo" />
-            </Logo>
-        </Link>
+      <Link to="/">
+        <Logo>
+          <img src="images/Logo (3).png" alt="logo" />
+        </Logo>
+      </Link>
 
-        <LinksContainerS>
-            <NavLinkS>
-                Home
-                <HiOutlineHome/>
-            </NavLinkS>
+      <LinksContainerS>
+        <NavLinkS>
+          Home
+          <HiOutlineHome />
+        </NavLinkS>
 
-            <NavLinkS
-                onClick={() => navigate("/login")}
-            >
-                Cuenta
-                <HiOutlineUserCircle/>
-            </NavLinkS>
+        <NavLinkS>About us</NavLinkS>
 
-            <NavLinkCart>
-                <CartBasketIcon/> 
-            </NavLinkCart>
+        <NavLinkS onClick={() => navigate("/login")}>
+          Cuenta
+          <HiOutlineUserCircle />
+        </NavLinkS>
 
-        </LinksContainerS>
+        <NavLinkCart>
+          <CartBasketIcon />
+        </NavLinkCart>
+
+        {/* <RxHamburgerMenu/> */}
+      </LinksContainerS>
     </NavbarContainerS>
   );
 };
