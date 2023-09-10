@@ -10,7 +10,7 @@ const AboutUs = () => {
 
       <AboutUsContainerS>
         <AboutImg>
-          <img src="images/cafe.jpg" alt="cafe" />
+          <img src="images/cafe.webp" alt="cafe" />
         </AboutImg>
         <AboutText>
           <h2>About us.</h2>

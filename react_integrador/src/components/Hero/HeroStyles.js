@@ -27,6 +27,7 @@ export const HeroMainContainer = styled.div`
 
   @media (max-width: 375px) {
     text-align: center;
+    font-size: smaller;
   }
 `;
 

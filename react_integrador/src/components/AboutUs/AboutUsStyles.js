@@ -14,6 +14,10 @@ export const AboutUsContainerS = styled.section`
   @media (max-width: 900px) {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  @media (max-width: 425px) {
+    padding: 2rem;
+  }
 `;
 
 export const AboutImg = styled.div`
@@ -25,6 +29,10 @@ export const AboutImg = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  @media (max-width: 425px) {
+    height: 200px;
   }
 `;
 
@@ -42,5 +50,13 @@ export const AboutText = styled.div`
 
   h2 {
     font-size: 1.9em;
+  }
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
+
+  @media (max-width: 425px) {
+    height: auto;
   }
 `;

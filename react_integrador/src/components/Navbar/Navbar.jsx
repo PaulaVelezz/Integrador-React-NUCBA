@@ -50,8 +50,6 @@ const Navbar = () => {
         <NavLinkCart>
           <CartBasketIcon />
         </NavLinkCart>
-
-        {/* <RxHamburgerMenu/> */}
       </LinksContainerS>
     </NavbarContainerS>
   );

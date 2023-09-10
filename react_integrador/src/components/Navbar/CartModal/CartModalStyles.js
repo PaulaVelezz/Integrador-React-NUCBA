@@ -22,6 +22,14 @@ export const ProductCartContainerS = styled.div`
     object-fit: cover;
     object-position: center;
   }
+
+  @media (max-width: 425px) {
+    width: 280px;
+
+    & img {
+      display: none;
+    }
+  }
 `;
 
 export const InfoProductCartS = styled.div`
@@ -49,6 +57,14 @@ export const CartModalContainerS = styled.div`
   height: calc(100vh - 2rem);
   background-color: whitesmoke;
   border-radius: 7px;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
+
+  @media (max-width: 425px) {
+    width: 300px;
+  }
 `;
 
 export const CloseBtnContainerS = styled.div`

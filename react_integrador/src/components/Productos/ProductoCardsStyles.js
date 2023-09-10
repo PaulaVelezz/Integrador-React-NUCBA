@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
 export const ProdCardContainer = styled.div`
-  /* display: flex;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background: transparent;
-  color: #141414;
-  padding: 8rem;
-  margin: auto; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 3em;
-  padding: 3em;
-  margin: 3em;
+  padding: 6rem;
+  margin: auto;
+
+  @media (max-width: 425px) {
+    padding: 4rem;
+  }
+
+  @media (max-width: 375px) {
+    padding: 2rem;
+  }
 `;
 
 export const ProdCardS = styled.div`
@@ -39,6 +41,14 @@ export const ProdCardS = styled.div`
 
   img {
     width: 270px;
+  }
+
+  @media (max-width: 425px) {
+    width: 250px;
+  }
+
+  @media (max-width: 375px) {
+    width: 230px;
   }
 `;
 
