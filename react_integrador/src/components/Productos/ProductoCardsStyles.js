@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
 export const ProdCardContainer = styled.div`
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   background: transparent;
   color: #141414;
-  padding: 6rem 4rem;
-  margin: auto;
+  padding: 8rem;
+  margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 3em;
+  padding: 3em;
+  margin: 3em;
 `;
 
 export const ProdCardS = styled.div`
@@ -24,6 +29,7 @@ export const ProdCardS = styled.div`
   height: 370px;
   gap: 10px;
   padding: 20px;
+  color: black;
 
   h3 {
     font-family: "Blenny Trial", sans-serif;

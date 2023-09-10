@@ -11,13 +11,16 @@ import {
 } from "./CardDetailsStyles";
 
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const CardDetails = () => {
   return (
     <DetailsContainer>
       <BtnGoBack>
         <FaArrowLeftLong />
-        Volver atrás
+        <Link to="/" style={{ color: "whitesmoke" }}>
+          Volver atrás
+        </Link>
       </BtnGoBack>
 
       <DetailsImg>

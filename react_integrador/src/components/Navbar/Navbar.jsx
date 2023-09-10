@@ -30,11 +30,17 @@ const Navbar = () => {
 
       <LinksContainerS>
         <NavLinkS>
-          Home
+          <Link style={{ color: "whitesmoke" }} to="/">
+            Home
+          </Link>
           <HiOutlineHome />
         </NavLinkS>
 
-        <NavLinkS>About us</NavLinkS>
+        <NavLinkS>
+          <Link style={{ color: "whitesmoke" }} to="/about">
+            About us
+          </Link>
+        </NavLinkS>
 
         <NavLinkS onClick={() => navigate("/login")}>
           Cuenta

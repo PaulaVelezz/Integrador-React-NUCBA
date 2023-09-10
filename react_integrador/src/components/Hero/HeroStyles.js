@@ -103,7 +103,7 @@ export const HeroBtnOne = styled.button`
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
   font-weight: bolder;
-  cursor: none;
+  cursor: not-allowed;
 `;
 
 export const HeroBtnTwo = styled.button`
@@ -115,5 +115,5 @@ export const HeroBtnTwo = styled.button`
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
   font-weight: bolder;
-  cursor: none;
+  cursor: pointer;
 `;

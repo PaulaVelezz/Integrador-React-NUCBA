@@ -23,7 +23,7 @@ const ProductoCard = ({ img, title, price, id }) => {
       <BtnPriceContainer>
         <PriceCard>${price}</PriceCard>
 
-        <ButtonUI onClick={cardDetails}> Ver detalle </ButtonUI>
+        {/* <ButtonUI onClick={cardDetails}> Ver detalle </ButtonUI> */}
 
         <ButtonUI
           onClick={() => dispatch(addToCart({ img, title, price, id }))}
