@@ -46,9 +46,60 @@ export const NavLinkS = styled.div`
 
 export const NavLinkCart = styled(NavLinkS)``;
 
-export const ModalMenuOverlay = styled(motion.div)`
-  position: fixed;
-  top: 0;
+export const NavMenu = styled.div`
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
-export const ItemMenu = styled(motion(Link))``;
+export const Menu = styled.ul`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({ show }) => (show ? "0" : "-100%")};
+    flex-direction: column;
+    transition: 0ms.5s all ease-in;
+    background-color: #094c66;
+  }
+`;
+
+export const MenuItem = styled.li`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%.5rem 1rem;
+  font-size: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 70px;
+  }
+`;
+
+export const MenuItemLink = styled(Link)`
+  color: whitesmoke;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+`;
+
+export const IconMobile = styled.div`
+  display: none;
+  font-size: 1.3rem;
+
+  @media (max-width: 768px) {
+    display: flex;
+    cursor: pointer;
+    color: whitesmoke;
+  }
+`;

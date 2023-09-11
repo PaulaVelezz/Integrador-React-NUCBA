@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   LinksContainerS,
@@ -6,17 +6,27 @@ import {
   NavLinkS,
   NavbarContainerS,
   NavLinkCart,
+  Menu,
+  MenuItem,
+  MenuItemLink,
+  IconMobile,
 } from "./NavbarStyles";
 
 import { HiOutlineHome, HiOutlineUserCircle } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import CartBasketIcon from "./CartBasketIcon/CartBasketIcon";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import { AiFillCloseSquare } from "react-icons/ai";
 import CartModal from "./CartModal/CartModal";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+
+  const changeShow = () => {
+    setShow(!show);
+  };
 
   return (
     <NavbarContainerS>
@@ -28,29 +38,33 @@ const Navbar = () => {
         </Logo>
       </Link>
 
-      <LinksContainerS>
-        <NavLinkS>
-          <Link style={{ color: "whitesmoke" }} to="/">
+      <IconMobile onClick={() => changeShow()}>
+        {show ? <AiFillCloseSquare /> : <RxHamburgerMenu />}
+      </IconMobile>
+
+      <Menu show={show}>
+        <MenuItem onClick={() => changeShow()}>
+          <MenuItemLink to="/">
             Home
-          </Link>
-          <HiOutlineHome />
-        </NavLinkS>
+            <HiOutlineHome />
+          </MenuItemLink>
+        </MenuItem>
 
-        <NavLinkS>
-          <Link style={{ color: "whitesmoke" }} to="/about">
-            About us
-          </Link>
-        </NavLinkS>
+        <MenuItem onClick={() => changeShow()}>
+          <MenuItemLink to="/about">About us</MenuItemLink>
+        </MenuItem>
 
-        <NavLinkS onClick={() => navigate("/login")}>
-          Cuenta
-          <HiOutlineUserCircle />
-        </NavLinkS>
+        <MenuItem onClick={() => changeShow()}>
+          <MenuItemLink style={{ color: "whitesmoke" }} to="/login">
+            Cuenta
+            <HiOutlineUserCircle />
+          </MenuItemLink>
+        </MenuItem>
+      </Menu>
 
-        <NavLinkCart>
-          <CartBasketIcon />
-        </NavLinkCart>
-      </LinksContainerS>
+      <NavLinkCart>
+        <CartBasketIcon />
+      </NavLinkCart>
     </NavbarContainerS>
   );
 };
