@@ -24,3 +24,8 @@ En este repositorio está alojado el proyecto integrador que corresponde al modu
 
 ## Login: 
 
+[![login.png](https://i.postimg.cc/SQB83xnT/login.png)](https://postimg.cc/xqPcbYyM)
+
+## Register:
+
+[![register.png](https://i.postimg.cc/9M4Rg6CH/register.png)](https://postimg.cc/9RhQrNDL)
