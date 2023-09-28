@@ -2,7 +2,7 @@
 En este repositorio está alojado el proyecto integrador que corresponde al modulo de React - Camada #2717 - NUCBA
 
 # Project link: 
-[https://integrador-diseno-web-nucba.vercel.app/](https://integrador-react-nucba-lime.vercel.app/)
+https://integrador-react-nucba-lime.vercel.app/
 # About the project: 
 "The Blessed Bean" is an e-commerce made with HTML, CSS, JavaScript, React.js, Redux Toolkit, CRA, Styled-Components, Formik, YUP.
 
