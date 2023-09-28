@@ -18,5 +18,9 @@ En este repositorio está alojado el proyecto integrador que corresponde al modu
 
 [![about.png](https://i.postimg.cc/vBhrtHS3/about.png)](https://postimg.cc/JDyH1m8k)
 
+## Cart: 
+
+[![cart.png](https://i.postimg.cc/nhvM8SYD/cart.png)](https://postimg.cc/hXtKTrYD)
+
 ## Login: 
 
